@@ -1,0 +1,42 @@
+.category-header {
+    border-bottom: 3px solid #1d3d52; /* Darker accent color border */
+    padding: 20px 30px; /* Added padding for better spacing */
+    margin-bottom: 20px;
+    color: #ecf0f1; /* Light color for contrast against dark background */
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #112a33; /* Darker background for category */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow */
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 2rem; /* Left margin for better alignment */
+  }
+  
+  /* Category Description */
+  .category-description {
+    font-size: 1.1rem;
+    color: #bdc3c7; /* Lighter grey for readability */
+    margin-top: 10px;
+    padding-left: 30px; /* Padding to align with the category header */
+    padding-right: 30px; /* Ensuring consistent padding */
+  }
+  
+  /* Food Items Container */
+  .food-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 2rem; /* Left margin for alignment */
+    padding-right: 2rem; /* Right padding for balance */
+  }
+  
+  /* No Items Found Message */
+  .no-items-message {
+    text-align: center;
+    color: #95a5a6; /* Lighter grey for the no items message */
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 0; /* Padding to give space around the text */
+  }

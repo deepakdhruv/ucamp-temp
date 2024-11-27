@@ -1,0 +1,30 @@
+.about-container {
+    background-color: #333; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #24b9d7; /* Accent color */
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #ddd; /* Lighter text for readability */
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: #a0c4d4; /* Lighter blue for headers */
+    margin-top: 1.5rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc; /* Light gray text */
+}

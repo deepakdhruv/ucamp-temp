@@ -1,0 +1,14 @@
+.custom-carousel {
+    height: 100%; /* Set height to 50% */
+    max-height: 100vh; /* Ensure it scales properly for smaller screens */
+  }
+  
+  .custom-carousel .carousel-inner {
+    height: 100%; /* Ensure inner content scales to fit the carousel */
+  }
+  
+  .custom-carousel img {
+    height: 100%; /* Make images scale to fit the carousel */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  

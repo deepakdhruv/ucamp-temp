@@ -1,0 +1,105 @@
+/* Login.css */
+
+/* General styling for the login container */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto; /* Center the form horizontally and vertically */
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading styles */
+  .login-container h2 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  /* Form label styling */
+  .login-container .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input field styling */
+  .login-container .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .login-container .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+  }
+  
+  /* Checkbox styling */
+  .login-container .form-check-label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Buttons styling */
+  .login-container .btn {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .login-container .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .login-container .btn-success:hover {
+    background-color: #218838;
+    color: #fff;
+  }
+  
+  .login-container .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .login-container .btn-danger:hover {
+    background-color: #c82333;
+    color: #fff;
+  }
+  
+  /* Text helper style */
+  .login-container .form-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 576px) {
+    .login-container {
+      margin: 20px auto;
+      padding: 20px;
+    }
+  
+    .login-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-container .btn {
+      font-size: 0.9rem;
+    }
+  }
+  

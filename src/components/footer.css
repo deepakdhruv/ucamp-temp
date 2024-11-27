@@ -1,0 +1,23 @@
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+  }
+  
+  .footer .nav-link {
+    color: #adb5bd; /* Muted text color for the link */
+  }
+  
+  .footer .nav-link:hover {
+    color: #ffffff; /* Hover effect for links */
+  }
+  
+  .footer .text-muted {
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .row {
+      text-align: center;
+    }
+  }
+  

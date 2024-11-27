@@ -1,0 +1,141 @@
+/* Navbar Container */
+.navbar {
+  background: linear-gradient(135deg, #000000, #24b9d7); /* Gradient background */
+  border-bottom: 3px solid #94d2bd; /* Accent line at the bottom */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it at the top of the page */
+  left: 0; /* Align it to the left */
+  right: 0; /* Stretch it to the right */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.navbar:hover {
+  transform: translateY(-2px); /* Lifts the navbar slightly on hover */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-family: 'Pacifico', cursive; /* Unique, playful font */
+  color: #f0fdfa !important; /* Soft white text */
+  font-size: 2rem; /* Slightly larger for prominence */
+  letter-spacing: 3px;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #e59797 !important; /* Light teal hover effect */
+  text-shadow: 0px 0px 8px rgba(148, 210, 189, 0.7); /* Glow effect */
+}
+
+/* Navbar Links */
+.nav-item .nav-link {
+  color: #f0fdfa !important; /* Light color for better contrast */
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 1rem; /* Spacing between links */
+  padding: 0.5rem 0;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: #e9d8a6 !important; /* Warm, golden hover effect */
+  text-shadow: 0px 2px 5px rgba(233, 216, 166, 0.5); /* Glow effect */
+}
+
+/* Active Link Styling */
+.nav-item .nav-link.active {
+  color: #94d2bd !important; /* Teal for active link */
+  border-bottom: 2px solid #94d2bd; /* Underline the active link */
+}
+
+/* Buttons */
+/* Buttons */
+.btn {
+  font-weight: 600; /* Bold text */
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px; /* Fully rounded buttons */
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  margin: 0 0.5rem; /* Space out buttons */
+  color: white !important; /* Make text white */
+  text-transform: uppercase; /* Uppercase text for consistency */
+  font-size: 1rem; /* Ensure text is bold and consistent size */
+}
+
+.btn.bg-green {
+  background-color: #28a745; /* Green background */
+  border: none; /* No border */
+}
+
+.btn.bg-green:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.btn.bg-red {
+  background-color: #dc3545; /* Red background */
+  border: none; /* No border */
+}
+
+.btn.bg-red:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Add other buttons as needed, using bg-green or bg-red */
+
+
+/* Toggler */
+.navbar-toggler {
+  border: none; /* Clean design */
+  outline: none; /* No focus outline */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M2 4h12v1H2zm0 3h12v1H2zm0 3h12v1H2z'/%3E%3C/svg%3E");
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center align links on smaller devices */
+  }
+
+  .nav-item .nav-link {
+    font-size: 1.1rem; /* Slightly smaller font on mobile */
+    margin-right: 0.5rem;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #f0fdfa; /* Set icon to white */
+  }
+}
+
+/* Additional Media Query for smaller screens */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem; /* Smaller font for brand */
+  }
+
+  .navbar {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem; /* Smaller buttons on mobile */
+  }
+
+  .nav-item .nav-link {
+    font-size: 1rem; /* Even smaller links on very small screens */
+  }
+}
+
+/* To avoid content overlap */
+body {
+  padding-top: 70px; /* Space for the fixed navbar */
+}

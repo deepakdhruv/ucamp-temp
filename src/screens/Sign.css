@@ -1,0 +1,100 @@
+/* Sign.css */
+
+/* Centering the form container */
+.sign-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  .sign-form-container h2 {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form labels */
+  .sign-form-container .form-label {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Form input fields */
+  .sign-form-container .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .sign-form-container .form-control:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+  }
+  
+  /* Helper text */
+  .sign-form-container .form-text {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  .sign-form-container .btn {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sign-form-container .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .sign-form-container .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .sign-form-container .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .sign-form-container .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .sign-form-container {
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .sign-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .sign-form-container .btn {
+      font-size: 0.9rem;
+    }
+  }
+  

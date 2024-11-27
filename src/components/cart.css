@@ -1,0 +1,133 @@
+.container {
+  background-color: #292e2e; /* Dark background */
+  color: #f1f1f1; /* Light text color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2, h5, p {
+  color: #f1f1f1; /* Light text color */
+}
+
+.table {
+  color: #f1f1f1; /* Light text color */
+  border-radius: 12px; /* Rounded corners for the table */
+  border-collapse: separate; /* Maintain rounded corners */
+  border-spacing: 0; /* Remove gaps between cells */
+  overflow: hidden; /* Ensure rounded corners are respected */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background: #2d3239; /* Dark blue background from navbar */
+  padding: 20px;
+}
+
+/* Table headers */
+.table th {
+  background-color: #163438; /* Dark teal background, matching navbar */
+  color: #f0fdfa; /* White text, similar to navbar */
+  font-weight: 600; /* Bold text for emphasis */
+  text-align: left; /* Left-align text */
+  padding: 16px 20px; /* Add padding for headers */
+  border-top-left-radius: 12px; /* Rounded corners for top left */
+  border-top-right-radius: 12px; /* Rounded corners for top right */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Light shadow for the header */
+}
+
+/* Table rows */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #1e2a34; /* Darker row background, close to navbar's dark tone */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #253544; /* Slightly lighter dark rows */
+}
+
+/* Hover effect on rows */
+.table-striped tbody tr:hover {
+  background-color: #3d5866; /* Lighter row on hover */
+  transform: translateY(-2px); /* Slight lifting effect */
+  cursor: pointer; /* Indicates interactivity */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Table data cells */
+.table td {
+  padding: 14px 20px; /* Padding for table cells */
+  text-align: left; /* Left-align text */
+  border-bottom: 1px solid #444; /* Subtle border between rows */
+  font-size: 14px; /* Adjust font size for consistency */
+}
+
+/* Remove bottom border from the last row */
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Button styles inside the table */
+.table button {
+  border-radius: 8px; /* Rounded corners for buttons */
+  padding: 8px 14px; /* Padding for buttons */
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s ease; /* Smooth hover and click effects */
+}
+
+/* Button Hover Effects */
+.table button:hover {
+  transform: scale(1.05); /* Slight zoom on hover for buttons */
+  opacity: 0.9; /* Slight fade effect */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red for removal */
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.btn-warning {
+  background-color: #f39c12; /* Yellow for clearing */
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e67e22; /* Darker yellow on hover */
+}
+
+.btn-success {
+  background-color: #2ecc71; /* Green for success/checkout */
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Toggler for mobile responsiveness */
+.navbar-toggler {
+  border: none; /* Clean design for toggler */
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M2 4h12v1H2zm0 3h12v1H2zm0 3h12v1H2z'/%3E%3C/svg%3E");
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table {
+    padding: 1rem; /* Adjust padding on smaller screens */
+  }
+
+  .table th, .table td {
+    padding: 10px; /* Reduce padding in table cells */
+  }
+
+  .table button {
+    font-size: 12px; /* Make buttons slightly smaller */
+    padding: 6px 10px; /* Adjust button padding */
+  }
+}

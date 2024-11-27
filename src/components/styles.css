@@ -1,0 +1,29 @@
+.notification {
+    position: fixed;
+    bottom: 20px; /* Position it 20px from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #4caf50; /* Green background for success */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 9999; /* Make sure it's on top of other content */
+    opacity: 1;
+    animation: fadeOut 1s forwards;
+  }
+  
+  /* Fade-out effect */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
